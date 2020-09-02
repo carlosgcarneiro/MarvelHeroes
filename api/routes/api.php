@@ -29,15 +29,12 @@ Route::group([
 });
 
 Route::group([
-    'middleware' => 'api',
     'prefix' => 'v1/public'
-
 ], function ($router) {
-
-    Route::post('register', 'JWTAuthController@register');
-    Route::post('login', 'JWTAuthController@login');
-    Route::post('logout', 'JWTAuthController@logout');
-    Route::post('refresh', 'JWTAuthController@refresh');
-    Route::get('profile', 'JWTAuthController@profile');
-
+    Route::get('characters', 'CharacterController@characters');
+    Route::get('characters/{characterId}', 'CharacterController@character');
+    Route::get('characters/{characterId}/comics', 'CharacterController@comics');
+    Route::get('characters/{characterId}/events', 'CharacterController@events');
+    Route::get('characters/{characterId}/series', 'CharacterController@series');
+    Route::get('characters/{characterId}/stories', 'CharacterController@stories');
 });

@@ -83,6 +83,6 @@ Later, on your favourite browser, type the url shown on the prompt. As example, 
 	+ return an espefic characters and its respective stories.
 	
 
-If the API receive an invalid *characterId* it will return an empty json.
+If the API receve an invalid *characterId* it will return an empty json.
 
 
