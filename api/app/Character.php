@@ -15,5 +15,4 @@ class Character extends Model
         return $this->belongsToMany(Comic::class);
     }
 
-
 }
