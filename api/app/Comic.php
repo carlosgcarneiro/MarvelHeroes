@@ -18,6 +18,6 @@ class Comic extends Model
     }
 
     public function serie(){
-        return $this->belongsToOne(Serie::class);
+        return $this->belongsTo(Serie::class);
     }
 }

@@ -11,7 +11,7 @@ class Story extends Model
         'description',
     ];
 
-    public function events(){
-        return $this->belongsToMany(Event::class);
+    public function series(){
+        return $this->hasMany(Serie::class);
     }
 }

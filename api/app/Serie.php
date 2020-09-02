@@ -16,6 +16,6 @@ class Serie extends Model
     }
 
     public function story(){
-        return $this->belongsToOne(Story::class);
+        return $this->belongsTo(Story::class);
     }
 }
